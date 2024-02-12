@@ -6,12 +6,12 @@ namespace Kvazar\Crypto;
 
 class Kevacoin
 {
-    public static function decode(string $value)
+    public static function decode(string $value): mixed
     {
-        if (is_numeric($string) && $string < 0xFFFFFFFF)
+        if (is_numeric($value) && $value < 0xFFFFFFFF)
         {
             return mb_chr(
-                $string,
+                $value,
                 'ASCII'
             );
         }
@@ -19,7 +19,7 @@ class Kevacoin
         else
         {
             return hex2bin(
-                $string
+                $value
             );
         }
     }
