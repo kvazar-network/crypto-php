@@ -6,7 +6,7 @@ namespace Kvazar\Crypto;
 
 class Kevacoin
 {
-    function decode(string $value)
+    public static function decode(string $value)
     {
         if (is_numeric($string) && $string < 0xFFFFFFFF)
         {
