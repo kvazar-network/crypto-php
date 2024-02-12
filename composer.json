@@ -1,0 +1,12 @@
+{
+    "name": "kvazar/crypto",
+    "description": "Crypto Tools for PHP 8",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kvazar\\Crypto\\": "src/"
+        }
+    },
+    "require": {}
+}
