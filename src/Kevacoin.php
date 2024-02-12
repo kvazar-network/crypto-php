@@ -11,7 +11,7 @@ class Kevacoin
         if (is_numeric($value) && $value < 0xFFFFFFFF)
         {
             return mb_chr(
-                $value,
+                (int) $value,
                 'ASCII'
             );
         }
