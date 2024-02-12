@@ -34,14 +34,14 @@ class Tool
 
         while ($dec > $base - 1)
         {
-            $rest  = bcmod(
-                $dec,
-                $base
+            $rest = bcmod(
+                (string) $dec,
+                (string) $base
             );
 
-            $dec   = bcdiv(
-                $dec,
-                $base
+            $dec = bcdiv(
+                (string) $dec,
+                (string) $base
             );
 
             $value = $digits[$rest] . $value;
@@ -89,15 +89,15 @@ class Tool
             );
 
             $power = bcpow(
-                $base,
-                $size - $loop - 1
+                (string) $base,
+                (string) ($size - $loop - 1)
             );
 
             $dec = bcadd(
                 $dec,
                 bcmul(
-                    $element,
-                    $power
+                    (string) $element,
+                    (string) $power
                 )
             );
         }
