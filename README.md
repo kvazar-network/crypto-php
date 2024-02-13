@@ -4,7 +4,8 @@ Useful to decode raw data in [KevaCoin](https://github.com/kevacoin-project/) bl
 
 ## Install
 
-`composer require kvazar/crypto:dev-main`
+* `apt install composer php-fpm php-mbstring php-bcmath`
+* `composer require kvazar/crypto:dev-main`
 
 ## Usage
 
